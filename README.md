@@ -134,7 +134,6 @@ Paste the token from the displayed image into the password or token field in the
 ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/6.png)
 
 ## 15. Verify Jupyter Notebook Setup
-Ensure successful launch of Jupyter Notebook on the server for seamless operation.
 ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/7.png)
 
 ## 16. open 3_running_cv_models.ipynb
