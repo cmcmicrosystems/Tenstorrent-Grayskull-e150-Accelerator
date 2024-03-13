@@ -13,22 +13,25 @@ To start using the Tenstorrent Grayskull™ e150 Accelerator, follow these steps
    ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/12.png)
    
 4. **Find the Server IP Address:**
-   In the shortcut details window, you will find the IP address of the server. In this case, the IP address of the server is 172.16.60.18    
-5. **SSH to the Server:**
+   In the shortcut details window, you will find the IP address of the server. In this case, the IP address of the server is 172.16.60.18
+
+   ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/3.png)
+   
+6. **SSH to the Server:**
    Use the obtained IP address to SSH into the server using the following command:
    ```
    ssh username@ipaddress                     
    ```
-6. **Copy the configuration script and tutorials:**
+7. **Copy the configuration script and tutorials:**
    ```
    cp -r -a /CMC/* /home/username
    cd /home/username/untether
    ```
-7. **Change permission of your directory and files**
+8. **Change permission of your directory and files**
    ```
    chmod-R a+rwx /home/username/untether
    ```   
-8. **Check Available Accelerators:**
+9. **Check Available Accelerators:**
 Once connected to the server, type the following command to see available accelerator cards in the system:
    ```
    lspci | grep accelerator
