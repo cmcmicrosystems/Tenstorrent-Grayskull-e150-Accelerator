@@ -5,12 +5,12 @@ To start using the Tenstorrent Grayskull™ e150 Accelerator, follow these steps
    
 2. **Login to CADPass:**
    Use your CMC microsystems credentials to log in to CADPass. After logging in, you will see the following window:
-   ![Image Alt Text](https://github.com/cmcmicrosystems/Untether-tsunAImi-Accelerator/blob/main/cadpass.JPG)
+   ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/0.png)
    
 3. **Obtain AI Jupyter Notebook Shortcut Details:**
    Right-click on AI Jupyter Notebook and select "Shortcut details" as shown in the following figure:
 
-   ![Image Alt Text](https://github.com/cmcmicrosystems/Untether-tsunAImi-Accelerator/blob/main/cadpass1.JPG)
+   ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/1.png)
    
 4. **Find the Server IP Address:**
    In the shortcut details window, you will find the IP address of the server. In this case, the IP address of the server is 172.16.60.18    
