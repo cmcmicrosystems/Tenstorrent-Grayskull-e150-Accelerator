@@ -20,18 +20,9 @@ To start using the Tenstorrent Grayskull™ e150 Accelerator, follow these steps
 6. **SSH to the Server:**
    Use the obtained IP address to SSH into the server using the following command:
    ```
-   ssh username@ipaddress                     
+   ssh username@172.16.60.18                     
    ```
-7. **Copy the configuration script and tutorials:**
-   ```
-   cp -r -a /CMC/* /home/username
-   cd /home/username/untether
-   ```
-8. **Change permission of your directory and files**
-   ```
-   chmod-R a+rwx /home/username/untether
-   ```   
-9. **Check Available Accelerators:**
+7. **Check Available Accelerators:**
 Once connected to the server, type the following command to see available accelerator cards in the system:
    ```
    lspci | grep accelerator
@@ -51,6 +42,9 @@ yassine@tenstorrent:~$ source /CMC/tt/bin/activate
 ```
 (tt) yassine@tenstorrent:~$ tt-smi
 ```
+
+![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/4.png)
+
 12. copy examples to your home directory
 ```
 cp -rf /CMC/tt-buda-demos/ .
