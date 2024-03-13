@@ -8,17 +8,17 @@ To start using the Tenstorrent Grayskull™ e150 Accelerator, follow these steps
    ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/0.png)
    
 3. **Obtain AI Jupyter Tenstorrent Shortcut Details:**
-   Right-click on AI Jupyter Tenstorrent and select "Shortcut details" as shown in the following figure:
+To access the shortcut details for AI Jupyter Tenstorrent, right-click on the application and choose "Shortcut details", as demonstrated in the accompanying illustration:
 
    ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/12.png)
    
 4. **Find the Server IP Address:**
-   In the shortcut details window, you will find the IP address of the server. In this case, the IP address of the server is 172.16.60.18
+Within the shortcut details window, you will locate the server's IP address. In this instance, the IP address of the server is identified as 172.16.60.18.
 
    ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/3.png)
    
 6. **SSH to the Server:**
-   Use the obtained IP address to SSH into the server using the following command:
+Utilize the acquired IP address to SSH into the server with the following command:
    ```
    ssh username@172.16.60.18                     
    ```
@@ -33,96 +33,119 @@ The output of this command will display the available accelerator cards, such as
 b1:00.0 Processing accelerators: Device 1e52:faca
 ca:00.0 Processing accelerators: Device 1e52:faca
    ```
+
 8. **Activate the virtual environment:**
-PyBuda ™ is a compute framework used to develop, run, and analyze ML workloads on Tenstorrent hardware.
-for more details about the framework, visit: https://docs.tenstorrent.com/tenstorrent/v/tt-buda
-The TT-Buda software stack can compile AI/ML models from several different frameworks such as PyTorch and Tensorflow, and execute them in many different ways on Tenstorrent hardware.
+PyBuda™ is a comprehensive compute framework tailored for developing, executing, and analyzing machine learning workloads on Tenstorrent hardware. For detailed insights into this framework, please refer to the documentation available at: https://docs.tenstorrent.com/tenstorrent/v/tt-buda.
 
-Note on terminology:
+The TT-Buda software stack is adept at compiling AI/ML models sourced from diverse frameworks such as PyTorch and TensorFlow. It empowers users to execute these models across various methodologies on Tenstorrent hardware.
 
-TT-Buda is the official Tenstorrent AI/ML compiler stack and PyBuda is the Python interface for TT-Buda. PyBuda allows users to access and utilize TT-Buda's features directly from Python. This includes directly importing model architectures and weights from PyTorch, TensorFlow, ONNX, and TFLite.
+A crucial distinction in terminology exists:
+
+TT-Buda stands as the official AI/ML compiler stack for Tenstorrent.
+PyBuda serves as the Python interface to TT-Buda. This interface facilitates direct access to TT-Buda's functionalities from within Python, enabling users to seamlessly import model architectures and weights from PyTorch, TensorFlow, ONNX, and TFLite.
+
+To activate  TT-Buda, execute the following command:
 
 ``` 
 yassine@tenstorrent:~$ source /CMC/tt/bin/activate
 (tt) yassine@tenstorrent:~$
 ```
-10. run TT-SMI
+
+
+10. ** run TT-SMI ** 
+
+The Tenstorrent System Management Interface (TT-SMI) is a command-line utility designed to facilitate interactions with all Tenstorrent devices hosted on a system.
+The primary aim of TT-SMI is to furnish users with a straightforward and user-friendly interface for gathering and presenting device, telemetry, and firmware information.
+Furthermore, users can utilize TT-SMI to execute resets for Tensix cores on the Grayskull board.
+To run tt-smi, execute the following command:
 ```
 (tt) yassine@tenstorrent:~$ tt-smi
 ```
-
 ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/4.png)
 
-12. copy examples to your home directory
+For more details about tt-smi, visit: https://github.com/tenstorrent/tt-smi
+
+
+### 12. Copy Examples to Your Home Directory
+To copy the demo examples to your home directory, execute the following command:
 ```
 cp -rf /CMC/tt-buda-demos/ .
 ```
-Alternatively, you can clone the repo as follow:
+Alternatively, you can clone the repository with the following command:
+
 ```
 git clone https://github.com/tenstorrent/tt-buda-demos
 ```
-13. run resnet
-``` 
+
+### 13. Run ResNet
+Navigate to the ResNet model demo directory by executing:
+
+```
 cd /home/yassine/tt-buda-demos/model_demos/cv_demos/resnet
 ```
-Open pytorch_resnet.py in editor and analyze the file. to run pytorch_resnet on Tenstorrent Grayskull e150 Accelerator, execute the following command:
+
+Open the pytorch_resnet.py file in your editor to analyze it. To run PyTorch ResNet on Tenstorrent Grayskull e150 Accelerator, use the following command:
+
 ```
 python pytorch_resnet.py
 ```
 
 
+
 First 5 Things To-Do
-For a simple, 5-step, starting guide on learning the basics of TT-Buda please visit first_5_steps.
+For a simple, 5-step, starting guide on learning the basics of TT-Buda, please visit the first_5_steps directory. Within that directory, you'll find the following user guides:
 
-In that directory, you will find the following user guides:
-
-1_install_ttbuda.md -> Installation guide for TT-Buda
-2_running_nlp_models.ipynb -> Run your first NLP model with TT-Buda
-3_running_cv_models.ipynb -> Run your first CNN model with TT-Buda
-4_batched_inputs.ipynb -> Learn how to run with batched inputs and how to benchmark models on TT-Buda
-5_serving_tt_models.ipynb -> Use FastAPI to host a model running on Tenstorrent hardware to build custom APIs
+1_install_ttbuda.md: Installation guide for TT-Buda
+2_running_nlp_models.ipynb: Running your first NLP model with TT-Buda
+3_running_cv_models.ipynb: Running your first CNN model with TT-Buda
+4_batched_inputs.ipynb: Learning how to run with batched inputs and how to benchmark models on TT-Buda
+5_serving_tt_models.ipynb: Using FastAPI to host a model running on Tenstorrent hardware to build custom APIs
 
 
+Jupyter Notebook Setup
+### 16. Setup Jupyter Notebook
 
-16. Jupyter notebook setup
+Navigate to the first_5_steps directory and install the Jupyter kernel for Tenstorrent with the following command:
+
 ```
 cd tt-buda-demos/first_5_steps
 python -m ipykernel install --user --name=tt
-Installed kernelspec tt in /home/yassine/.local/share/jupyter/kernels/tt
 ```
 
-17. run Jupyter notebook
+### 17. Run Jupyter Notebook
+Launch Jupyter Notebook with the following command:
 ```
 jupyter notebook --no-browser --port=8888
 ```
 
 ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/5.png)
 
+### 18. Access Jupyter Notebook Locally
+To access Jupyter Notebook from your local machine, use SSH tunneling with the following command:
 
-
-16. on a local machine
+```
 ssh -N -f -L localhost:8888:localhost:8888 username@IPaddreass -p 22
+```
 
-17. open in browser:
-open jupyter notebook lin in browser:
+Then, open the following link in your browser:
 http://localhost:8888/
 
 
-17. past the token from pic5 to the password or token field as shown in the following figure:
+### 19. Paste Token
+Paste the token from the displayed image into the password or token field in the Jupyter Notebook interface.
 ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/6.png)
 
-
-
-18. at this stage, you have successfully launched Jupyter notebook on the server:
+### 20. Verify Jupyter Notebook Setup
+Ensure successful launch of Jupyter Notebook on the server for seamless operation.
 ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/7.png)
 
+### 21. open 3_running_cv_models.ipynb
+A new window will open with the notebook loaded. Ensure that the "tt" environment is enabled, as demonstrated in the following figure:
 
- 
-19. open 3_running_cv_models.ipynb
-a new window open with the notebook loaded. make sure the environement tt is enabeled as shown the following figure:
 ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/8.png)
 
-21. read and execute each step of the notebook 
+### 21. Executing Notebook Steps
+ Read through the notebook and execute each step meticulously to ensure smooth progress and accurate results.
 
 ## Additional ressources:
 	1. TT-Buda: https://github.com/tenstorrent/tt-buda
