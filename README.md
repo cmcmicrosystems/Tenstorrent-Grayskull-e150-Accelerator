@@ -21,23 +21,26 @@ Locate the server's IP address in the shortcut details window. Note down the IP 
 
 ### 5. SSH to the Server
 SSH into the server using the obtained IP address. Execute the following command:
-```bash
+```
 ssh username@172.16.60.18
+```
 
 
 ### 6. Check Available Accelerators
 Once connected, check available accelerator cards by executing:
 
-bash
-Copy code
+```
 lspci | grep accelerator
+```
+
 This command will display available accelerator cards in the system.
 
-bash
-Copy code
+```
 yassine@tenstorrent:~$ lspci | grep accelerator
 b1:00.0 Processing accelerators: Device 1e52:faca
 ca:00.0 Processing accelerators: Device 1e52:faca
+```
+
 ### 7. Activate the Virtual Environment
 Activate the virtual environment using PyBuda™, a compute framework for ML workloads on Tenstorrent hardware. Visit this link for more details about PyBuda.
 
