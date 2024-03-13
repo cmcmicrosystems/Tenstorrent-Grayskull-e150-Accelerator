@@ -49,11 +49,64 @@ yassine@tenstorrent:~$ source /CMC/tt/bin/activate
 ```
 cp -rf /CMC/tt-buda-demos/ .
 ```
+Alternatively, you can clone the repo as follow:
+```
+git clone https://github.com/tenstorrent/tt-buda-demos
+```
 13. run resnet
 ``` 
 cd /home/yassine/tt-buda-demos/model_demos/cv_demos/resnet
+```
+Open pytorch_resnet.py in editor and analyze the file. to run pytorch_resnet on Tenstorrent Grayskull e150 Accelerator, execute the following command:
+```
 python pytorch_resnet.py
 ```
-15. 
-16. 
+
+
+16. Jupyter notebook setup
+```
+cd tt-buda-demos/first_5_steps
+python -m ipykernel install --user --name=tt
+Installed kernelspec tt in /home/yassine/.local/share/jupyter/kernels/tt
+```
+
+17. run Jupyter notebook
+```
+jupyter notebook --no-browser --port=8888
+```
+
+![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/5.png)
+
+
+
+16. on a local machine
+ssh -N -f -L localhost:8888:localhost:8888 username@IPaddreass -p 22
+
+17. open in browser:
+open jupyter notebook lin in browser:
+http://localhost:8888/
+
+
+17. past the token from pic5 to the password or token field as shown in the following figure:
+![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/6.png)
+
+
+
+18. at this stage, you have successfully launched Jupyter notebook on the server:
+![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/7.png)
+
+
+ 
+19. open 3_running_cv_models.ipynb
+a new window open with the notebook loaded. make sure the environement tt is enabeled as shown the following figure:
+![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/8.png)
+
+21. read and execute each step of the notebook 
+
+## Additional ressources:
+	1. TT-Buda: https://github.com/tenstorrent/tt-buda
+	2. budabackend: https://github.com/tenstorrent/tt-budabackend
+	3. TT-Metalium: https://github.com/tenstorrent-metal/tt-metal
+	4. tutorials and demos: https://github.com/tenstorrent/tt-buda-demos
+benchmarking scripts (now public!): https://github.com/tenstorrent/benchmarking![image](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/assets/9284879/f0800e6b-ca13-4104-9adc-cad1d6c23152)
 
