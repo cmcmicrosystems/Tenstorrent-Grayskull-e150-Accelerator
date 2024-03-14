@@ -6,7 +6,7 @@ To start using the Tenstorrent Grayskull™ e150 Accelerator, follow these steps
 ## 2. Login to CADPass:
    Use your CMC microsystems credentials to log in to CADPass. After logging in, you will see the following window:
 <p align="center">
-  <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/0.png" alt="Image Alt Text" style="width: 600; height: 400px;>
+  <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/0.png" alt="Image Alt Text">
 </p>
 
    
@@ -14,7 +14,7 @@ To start using the Tenstorrent Grayskull™ e150 Accelerator, follow these steps
 To access the shortcut details for AI Jupyter Tenstorrent, right-click on the application and choose "Shortcut details", as demonstrated in the accompanying illustration:
 
 <p align="center">
-  <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/12.png" alt="Image Alt Text" style="width: 600; height: 400px;>
+  <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/12.png" alt="Image Alt Text">
 </p>
 
    
