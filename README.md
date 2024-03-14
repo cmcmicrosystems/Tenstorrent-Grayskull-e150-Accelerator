@@ -129,8 +129,9 @@ jupyter notebook --no-browser --port=8888
 ```
 
 <div style="text-align:center">
-    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/5.png" alt="Image Alt Text" style=" width: 1200px; height: 350px;">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/5.png" alt="Image Alt Text" style="width: 80%;">
 </div>
+
 
 
 ## 13. Access Jupyter Notebook Locally
