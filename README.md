@@ -129,7 +129,7 @@ jupyter notebook --no-browser --port=8888
 ```
 
 <div style="text-align:center">
-    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/5.png" alt="Image Alt Text" style="width: 1200px; height: 450px;">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/5.png" alt="Image Alt Text" style=" width: 1200px; height: 500px;">
 </div>
 
 
@@ -147,13 +147,13 @@ http://localhost:8888/
 ## 14. Paste Token
 Paste the token from the displayed image into the password or token field in the Jupyter Notebook interface.
 <div style="text-align:center">
-    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/6.png" alt="Image Alt Text">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/6.png" alt="Image Alt Text" style=" width: 300px; height: 300px;">
 </div>
 
 
 ## 15. Verify Jupyter Notebook Setup
 <div style="text-align:center">
-    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/7.png" alt="Image Alt Text">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/7.png" alt="Image Alt Text" style=" width: 300px; height: 300px;">
 </div>
 
 
@@ -161,7 +161,7 @@ Paste the token from the displayed image into the password or token field in the
 A new window will open with the notebook loaded. Ensure that the "tt" environment is enabled, as demonstrated in the following figure:
 
 <div style="text-align:center">
-    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/8.png" alt="Image Alt Text">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/8.png" alt="Image Alt Text" style=" width: 300px; height: 300px;">
 </div>
 
 
