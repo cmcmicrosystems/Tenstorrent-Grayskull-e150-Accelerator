@@ -147,13 +147,13 @@ http://localhost:8888/
 ## 14. Paste Token
 Paste the token from the displayed image into the password or token field in the Jupyter Notebook interface.
 <div style="text-align:center">
-    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/6.png" alt="Image Alt Text" style=" width: 300px; height: 300px;">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/6.png" alt="Image Alt Text" style=" width: 400px; height: 500px;">
 </div>
 
 
 ## 15. Verify Jupyter Notebook Setup
 <div style="text-align:center">
-    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/7.png" alt="Image Alt Text" style=" width: 300px; height: 300px;">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/7.png" alt="Image Alt Text" style=" width: 400px; height: 500px;">
 </div>
 
 
