@@ -12,7 +12,10 @@ To start using the Tenstorrent Grayskull™ e150 Accelerator, follow these steps
 ## 3. Obtain AI Jupyter Tenstorrent Shortcut Details:
 To access the shortcut details for AI Jupyter Tenstorrent, right-click on the application and choose "Shortcut details", as demonstrated in the accompanying illustration:
 
-   ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/12.png)
+<p align="center">
+  <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/12.png" alt="Image Alt Text">
+</p>
+
    
 ## 4. Find the Server IP Address:
 Within the shortcut details window, you will locate the server's IP address. In this instance, the IP address of the server is identified as 172.16.60.18.
