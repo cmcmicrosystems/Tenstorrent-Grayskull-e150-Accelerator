@@ -148,7 +148,7 @@ http://localhost:8888/
 Paste the token from the displayed image into the password or token field in the Jupyter Notebook interface.
 
 <div style="text-align:center">
-    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/6.png" alt="Image Alt Text" style=" width: 500px; height: 700px;">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/6.png" alt="Image Alt Text" style=" width: 600px; height: 700px;">
 </div>
 
 ## 15. Verify Jupyter Notebook Setup
