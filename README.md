@@ -153,7 +153,7 @@ Paste the token from the displayed image into the password or token field in the
 
 ## 15. Verify Jupyter Notebook Setup
 <div style="text-align:center">
-    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/7.png" alt="Image Alt Text" style=" width: 600px; height: 700px;">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/7.png" alt="Image Alt Text" style=" width: 1200px; height: 700px;">
 </div>
 
 
