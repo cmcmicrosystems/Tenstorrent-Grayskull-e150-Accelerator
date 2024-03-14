@@ -20,7 +20,10 @@ To access the shortcut details for AI Jupyter Tenstorrent, right-click on the ap
 ## 4. Find the Server IP Address:
 Within the shortcut details window, you will locate the server's IP address. In this instance, the IP address of the server is identified as 172.16.60.18.
 
-   ![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/3.png)
+  <div style="text-align:center">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/3.png" alt="Image Alt Text">
+</div>
+
    
 ## 5. SSH to the Server:
 Utilize the acquired IP address to SSH into the server with the following command:
@@ -66,7 +69,10 @@ To run tt-smi, execute the following command:
 ```
 (tt) yassine@tenstorrent:~$ tt-smi
 ```
-![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/4.png)
+<div style="text-align:center">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/4.png" alt="Image Alt Text">
+</div>
+
 
 For more details about tt-smi, visit: https://github.com/tenstorrent/tt-smi
 
@@ -121,7 +127,10 @@ Launch Jupyter Notebook with the following command:
 jupyter notebook --no-browser --port=8888
 ```
 
-![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/5.png)
+<div style="text-align:center">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/5.png" alt="Image Alt Text">
+</div>
+
 
 ## 13. Access Jupyter Notebook Locally
 To access Jupyter Notebook from your local machine, use SSH tunneling with the following command:
@@ -136,15 +145,24 @@ http://localhost:8888/
 
 ## 14. Paste Token
 Paste the token from the displayed image into the password or token field in the Jupyter Notebook interface.
-![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/6.png)
+<div style="text-align:center">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/6.png" alt="Image Alt Text">
+</div>
+
 
 ## 15. Verify Jupyter Notebook Setup
-![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/7.png)
+<div style="text-align:center">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/7.png" alt="Image Alt Text">
+</div>
+
 
 ## 16. open 3_running_cv_models.ipynb
 A new window will open with the notebook loaded. Ensure that the "tt" environment is enabled, as demonstrated in the following figure:
 
-![Image Alt Text](https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/8.png)
+<div style="text-align:center">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/8.png" alt="Image Alt Text">
+</div>
+
 
 ## 17. Executing Notebook Steps
  Read through the notebook and execute each step meticulously to ensure smooth progress and accurate results.
