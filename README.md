@@ -161,7 +161,7 @@ Paste the token from the displayed image into the password or token field in the
 A new window will open with the notebook loaded. Ensure that the "tt" environment is enabled, as demonstrated in the following figure:
 
 <div style="text-align:center">
-    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/8.png" alt="Image Alt Text" style=" width: 300px; height: 300px;">
+    <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/8.png" alt="Image Alt Text" style=" width: 450px; height: 300px;">
 </div>
 
 
