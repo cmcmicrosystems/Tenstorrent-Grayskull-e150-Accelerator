@@ -14,7 +14,7 @@ To start using the Tenstorrent Grayskull™ e150 Accelerator, follow these steps
 To access the shortcut details for AI Jupyter Tenstorrent, right-click on the application and choose "Shortcut details", as demonstrated in the accompanying illustration:
 
 <p align="center">
-  <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/12.png" alt="Image Alt Text" >
+  <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/12.png" alt="Image Alt Text" style="width: 300px; height: 200px;">
 </p>
 
    
