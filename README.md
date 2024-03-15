@@ -4,7 +4,7 @@ The e150 DevKit is an introductory inference-only hardware kit coupled with two 
   <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/20.png" alt="Image Alt Text">
 </p>
 
-| Key Features          |                              | Key Models Supported by Grayskull |                                           |
+| Key Features                                         | Key Models Supported by Grayskull                                            |
 |-----------------------|------------------------------| ------------------------------------|-------------------------------------------|
 | Architecture          | Tenstorrent Grayskull™       | BERT                               | Ideal for natural language processing tasks. |
 | Tensix Cores          | 120                          | ResNet                             | A classic choice for image recognition. |
