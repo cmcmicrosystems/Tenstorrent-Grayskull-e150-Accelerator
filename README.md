@@ -135,17 +135,18 @@ Copy the token obtained from (12.) into the password or token field in the Jupyt
 
 
 ## 15. Verify Jupyter Notebook Setup
+After successful authentication, a Jupyter notebook page is loaded, displaying the available notebooks in the current directory, as depicted in the following figure:
+
 <div align="center">
     <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/7.png" alt="Image Alt Text" style=" width: 1200px; height: 400px;">
 </div>
 
 ## 16. Run examples
-A new window will open with the notebook loaded. Ensure that the "tt" environment is enabled, as demonstrated in the following figure:
+Click on one of the notebooks and ensure that the "tt" environment is enabled, as demonstrated in the following figure:
 <div align="center">
     <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/8.png" alt="Image Alt Text" style=" width: 800px; height: 150px;">
 </div>
 
-## 17. Executing Notebook Steps
 Read through the notebook and execute each step meticulously to ensure smooth progress and accurate results.
 
 ### GitHub Links to Open Source Software Repositories
