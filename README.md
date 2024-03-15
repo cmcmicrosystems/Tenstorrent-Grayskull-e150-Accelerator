@@ -133,13 +133,13 @@ Paste the token obtained from (12.) into the password or token field in the Jupy
 
 
 ## 15. Verify Jupyter Notebook Setup
-<div style="text-align:center">
+<div align="center">
     <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/7.png" alt="Image Alt Text" style=" width: 1200px; height: 400px;">
 </div>
 
 ## 16. open 3_running_cv_models.ipynb
 A new window will open with the notebook loaded. Ensure that the "tt" environment is enabled, as demonstrated in the following figure:
-<div style="text-align:center">
+<div align="center">
     <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/8.png" alt="Image Alt Text" style=" width: 800px; height: 150px;">
 </div>
 
