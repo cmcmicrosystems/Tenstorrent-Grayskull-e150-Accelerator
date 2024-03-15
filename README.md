@@ -127,8 +127,8 @@ ssh -N -f -L localhost:8888:localhost:8888 username@IPaddreass -p 22
 Then, open the following link in your browser:
 http://localhost:8888/
 
-## 14. Paste Token
-Paste the token obtained from (12.) into the password or token field in the Jupyter Notebook interface.
+## 14. Authentication
+Copy the token obtained from (12.) into the password or token field in the Jupyter Notebook interface.
 <div align="center">
   <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/6.png" alt="Image Alt Text" style="width: 600px; height: 600px;">
 </div>
@@ -139,7 +139,7 @@ Paste the token obtained from (12.) into the password or token field in the Jupy
     <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/7.png" alt="Image Alt Text" style=" width: 1200px; height: 400px;">
 </div>
 
-## 16. open 3_running_cv_models.ipynb
+## 16. Run examples
 A new window will open with the notebook loaded. Ensure that the "tt" environment is enabled, as demonstrated in the following figure:
 <div align="center">
     <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/8.png" alt="Image Alt Text" style=" width: 800px; height: 150px;">
