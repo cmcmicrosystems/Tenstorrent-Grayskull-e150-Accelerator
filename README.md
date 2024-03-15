@@ -93,17 +93,11 @@ python pytorch_resnet.py
 ```
 
 ## 11. Jupyter Notebook
-### TT-Buda Quick Start Guide
-
-This section offers a beginner-friendly 5-step guide to acquaint yourself with the fundamentals of TT-Buda:
-
-1. [Installation Guide for TT-Buda](1_install_ttbuda.md): Walks you through the installation process for TT-Buda.
-2. [Running Your First NLP Model with TT-Buda](2_running_nlp_models.ipynb): A tutorial on executing your initial NLP model using TT-Buda.
-3. [Running Your First CNN Model with TT-Buda](3_running_cv_models.ipynb): Introduces you to running your first CNN model with TT-Buda.
-4. [Learning How to Run with Batched Inputs and Benchmark Models on TT-Buda](4_batched_inputs.ipynb): Provides insights into working with batched inputs and benchmarking models on TT-Buda.
-5. [Using FastAPI to Host a Model Running on Tenstorrent Hardware to Build Custom APIs](5_serving_tt_models.ipynb): Demonstrates how to utilize FastAPI to host a model running on Tenstorrent hardware and create custom APIs.
-
-
+This section demonstrates the process of running Jupyter notebook examples on the e150, aimed at familiarizing users with the fundamentals of TT-Buda. These notebooks can be found in the directory tt-buda-demos/first_5_steps.
+-**running_nlp_models.ipynb**: Running your first NLP model with TT-Buda
+-**running_cv_models.ipynb**: Running your first CNN model with TT-Buda
+-**batched_inputs.ipynb**: Learning how to run with batched inputs and how to benchmark models on TT-Buda
+-**serving_tt_models.ipynb**: Using FastAPI to host a model running on Tenstorrent hardware to build custom APIs
 
 Navigate to the first_5_steps directory and install the Jupyter kernel for Tenstorrent with the following command:
 ```
