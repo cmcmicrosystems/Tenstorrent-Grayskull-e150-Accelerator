@@ -1,28 +1,12 @@
 # Getting Started with Tenstorrent Grayskull e150 Accelerator
+The provided guide outlines a comprehensive series of steps for initiating work with Grayskull e150 Accelerator. Beginning with the download and installation of CADPass, users are guided through authentication, acquisition of necessary details, and setup of necessary tools for interaction with the e150. Emphasizing practicality, the guide includes instructions for SSH access, identification of available accelerator cards, and activation of virtual environments. Users are also introduced to key tools like TT-SMI and offered guidance on copying demo examples for further exploration. Notably, the guide elucidates Python script execution and Jupyter Notebook usage, empowering users with practical approaches for model execution and experimentation. Furthermore, it underscores the importance of proper authentication and provides visual aids to ensure successful execution. Lastly, it directs users to valuable open-source repositories for continued exploration and development.
+
 The e150 DevKit is an introductory inference-only hardware kit coupled with two distinct software approaches: TT-Buda (top-down approach) and TT-Metalium (bottom-up approach). This combination provides a foundational platform for AI experimentation and development.
 <p align="center">
   <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/20.png" alt="Image Alt Text">
 </p>
 
-| Key Features                                         | Key Models Supported by Grayskull                                            |
-|------------------------------------------------------| -------------------------------------------------------------------------------|
-| Architecture          | Tenstorrent Grayskull™       | BERT                               | Ideal for natural language processing tasks. |
-| Tensix Cores          | 120                          | ResNet                             | A classic choice for image recognition. |
-| AI Clock              | 2 GHz                        | Whisper                            | Exceptional for speech recognition and translation. |
-| SRAM                  | 120MB                        | YOLOv5                             | Excellent for real-time object detection. |
-| Memory                | 8GB LPDDR4 @ 118.4 GB/sec    | U-Net                              | Highly effective for image segmentation. |
-| System Interface      | PCIe 4.0 x16                 |
-| Total Board Power     | 200W                         |
-
-
-
-
-
-
-
-
-
-
+For more details about Grayskull e150 Accelerator, visit [https://www.cmc.ca/tenstorrent-grayskull-e150-accelerator/](https://www.cmc.ca/tenstorrent-grayskull-e150-accelerator/)
 
 To start using the Tenstorrent Grayskull™ e150 Accelerator, follow these steps:
 
