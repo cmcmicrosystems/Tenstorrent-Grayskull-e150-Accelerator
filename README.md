@@ -1,4 +1,7 @@
 # Getting Started with Tenstorrent Grayskull e150 Accelerator
+The e150 DevKit is an introductory inference-only hardware kit coupled with two distinct software approaches: TT-Buda (top-down approach) and TT-Metalium (bottom-up approach). This combination provides a foundational platform for AI experimentation and development.
+
+
 To start using the Tenstorrent Grayskull™ e150 Accelerator, follow these steps:
 
 ## 1. Download and Install CADPass:
