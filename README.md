@@ -95,7 +95,7 @@ At this stage, you have various options to interact with the e150:
 ## 10. Python Script Execution
 Navigate to the ResNet model demo directory by executing:
 ```
-cd /home/yassine/tt-buda-demos/model_demos/cv_demos/resnet
+cd tt-buda-demos/model_demos/cv_demos/resnet
 ```
 Open the pytorch_resnet.py file in your editor to analyze it. To run PyTorch ResNet on Tenstorrent Grayskull e150 Accelerator, use the following command:
 ```
