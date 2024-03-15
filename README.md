@@ -4,17 +4,24 @@ The e150 DevKit is an introductory inference-only hardware kit coupled with two 
   <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/20.png" alt="Image Alt Text">
 </p>
 
-| Key Features           | Key Models Supported by Grayskull             |
-|------------------------|-----------------------------------------------|
-| Architecture           | BERT: Ideal for natural language processing tasks. |
-| Tensix Cores           | ResNet: A classic choice for image recognition.   |
-| AI Clock               | Whisper: Exceptional for speech recognition and translation. |
-| SRAM                   | YOLOv5: Excellent for real-time object detection. |
-| Memory                 | U-Net: Highly effective for image segmentation.   |
-| System Interface       |                                               |
-| Total Board Power      |                                               |
+| Key Features          |                              |
+|-----------------------|------------------------------|
+| Architecture          | Tenstorrent Grayskull™       |
+| Tensix Cores          | 120                          |
+| AI Clock              | 2 GHz                        |
+| SRAM                  | 120MB                        |
+| Memory                | 8GB LPDDR4 @ 118.4 GB/sec    |
+| System Interface      | PCIe 4.0 x16                 |
+| Total Board Power     | 200W                         |
 
 
+| Key Models Supported by Grayskull |                                           |
+|------------------------------------|-------------------------------------------|
+| BERT                               | Ideal for natural language processing tasks. |
+| ResNet                             | A classic choice for image recognition. |
+| Whisper                            | Exceptional for speech recognition and translation. |
+| YOLOv5                             | Excellent for real-time object detection. |
+| U-Net                              | Highly effective for image segmentation. |
 
 
 To start using the Tenstorrent Grayskull™ e150 Accelerator, follow these steps:
