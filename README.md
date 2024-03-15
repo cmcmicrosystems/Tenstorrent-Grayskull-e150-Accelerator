@@ -94,6 +94,7 @@ python pytorch_resnet.py
 
 ## 11. Jupyter Notebook
 This section demonstrates the process of running Jupyter notebook examples on the e150, aimed at familiarizing users with the fundamentals of TT-Buda. These notebooks can be found in the directory tt-buda-demos/first_5_steps.
+
 -**running_nlp_models.ipynb**: Running your first NLP model with TT-Buda.
 
 -**running_cv_models.ipynb**: Running your first CNN model with TT-Buda.
