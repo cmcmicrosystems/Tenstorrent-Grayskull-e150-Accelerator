@@ -4,13 +4,13 @@ The e150 DevKit is an introductory inference-only hardware kit coupled with two 
   <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/20.png" alt="Image Alt Text">
 </p>
 
-| Key Features          |                              | | Key Models Supported by Grayskull |                                           |
-|-----------------------|------------------------------| |------------------------------------|-------------------------------------------|
-| Architecture          | Tenstorrent Grayskull™       | | BERT                               | Ideal for natural language processing tasks. |
-| Tensix Cores          | 120                          | | ResNet                             | A classic choice for image recognition. |
-| AI Clock              | 2 GHz                        | | Whisper                            | Exceptional for speech recognition and translation. |
-| SRAM                  | 120MB                        | | YOLOv5                             | Excellent for real-time object detection. |
-| Memory                | 8GB LPDDR4 @ 118.4 GB/sec    | | U-Net                              | Highly effective for image segmentation. |
+| Key Features          |                              | Key Models Supported by Grayskull |                                           |
+|-----------------------|------------------------------| ------------------------------------|-------------------------------------------|
+| Architecture          | Tenstorrent Grayskull™       | BERT                               | Ideal for natural language processing tasks. |
+| Tensix Cores          | 120                          | ResNet                             | A classic choice for image recognition. |
+| AI Clock              | 2 GHz                        | Whisper                            | Exceptional for speech recognition and translation. |
+| SRAM                  | 120MB                        | YOLOv5                             | Excellent for real-time object detection. |
+| Memory                | 8GB LPDDR4 @ 118.4 GB/sec    | U-Net                              | Highly effective for image segmentation. |
 | System Interface      | PCIe 4.0 x16                 |
 | Total Board Power     | 200W                         |
 
