@@ -18,9 +18,10 @@ To access the shortcut details for AI Jupyter Tenstorrent, right-click on the ap
   
 ## 4. Find the Server IP Address:
 Within the shortcut details window, locate the server's IP address. In this instance, the IP address of the server is identified as 172.16.60.18.
-<div align="center">
-  <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/3.png" alt="Image Alt Text" style="width: 250px; height: 400px; border: 10px solid black;">
+<div align="center" style="border: 2px solid black; padding: 5px;">
+  <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/3.png" alt="Image Alt Text" style="width: 250px; height: 400px;">
 </div>
+
 
   
 ## 5. SSH to the Server:
