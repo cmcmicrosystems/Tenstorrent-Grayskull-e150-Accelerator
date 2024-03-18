@@ -45,7 +45,7 @@ Once connected to the server, type the following command to see the available ac
    ```
 The execution of this command will present the available accelerator cards, corresponding to the Tenstorrent Grayskull™ e150 Accelerator:
    ```
-yassine@tenstorrent:~$ lspci | grep accelerator
+username@tenstorrent:~$ lspci | grep accelerator
 b1:00.0 Processing accelerators: Device 1e52:faca
 ca:00.0 Processing accelerators: Device 1e52:faca
    ```
@@ -57,7 +57,7 @@ TT-Buda stands as the official AI/ML compiler stack for Tenstorrent. PyBuda serv
 To activate  TT-Buda, execute the following command:
 ``` 
 yassine@tenstorrent:~$ source /CMC/tt/bin/activate
-(tt) yassine@tenstorrent:~$
+(tt) username@tenstorrent:~$
 ```
 
 ## 8. TT-SMI 
@@ -66,7 +66,7 @@ The primary aim of TT-SMI is to furnish users with a straightforward and user-fr
 Furthermore, users can utilize TT-SMI to execute resets for Tensix cores on the Grayskull board.
 To run tt-smi, execute the following command:
 ```
-(tt) yassine@tenstorrent:~$ tt-smi
+(tt) username@tenstorrent:~$ tt-smi
 ```
 <div style="text-align:center">
     <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/4.png" alt="Image Alt Text">
