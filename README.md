@@ -23,7 +23,7 @@ Use your CMC microsystems credentials to log in to CADPass. After logging in, yo
 ## 3. Obtain AI Jupyter Tenstorrent Shortcut Details:
 To access the shortcut details for AI Jupyter Tenstorrent, right-click on the application and choose "Shortcut details", as demonstrated in the following illustration:
 <p align="center">
-  <img src="[https://github.com/cmcmicrosystems/Untether-tsunAImi-Accelerator/blob/main/cadpass1.JPG]" alt="Image Alt Text" style="width: 500px; height: 400px;">
+  <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/12.png" alt="Image Alt Text" style="width: 500px; height: 400px;">
 </p>
   
 ## 4. Find the Server IP Address:
