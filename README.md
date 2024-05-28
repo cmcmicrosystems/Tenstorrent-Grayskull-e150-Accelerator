@@ -49,15 +49,21 @@ username@tenstorrent:~$ lspci | grep accelerator
 b1:00.0 Processing accelerators: Device 1e52:faca
 ca:00.0 Processing accelerators: Device 1e52:faca
    ```
-## 7. Activate the virtual environment:
+## 7. Create and Activate the virtual environment:
 PyBuda™ is a comprehensive compute framework tailored for developing, executing, and analyzing machine learning workloads on Tenstorrent hardware. For detailed insights into this framework, please refer to the documentation available at: https://docs.tenstorrent.com/tenstorrent/v/tt-buda.
 The TT-Buda software stack is adept at compiling AI/ML models sourced from diverse frameworks such as PyTorch and TensorFlow. It empowers users to execute these models across various methodologies on Tenstorrent hardware.
 ### A crucial distinction in terminology exists:
 TT-Buda stands as the official AI/ML compiler stack for Tenstorrent. PyBuda serves as the Python interface to TT-Buda. This interface facilitates direct access to TT-Buda's functionalities from within Python, enabling users to seamlessly import model architectures and weights from PyTorch, TensorFlow, ONNX, and TFLite.
 To activate  TT-Buda, execute the following command:
 ``` 
-yassine@tenstorrent:~$ source /CMC/tt/bin/activate
-(tt) username@tenstorrent:~$
+python3 -m venv .venv
+source .venv/bin/activate
+pip3 install --upgrade pip==24.0
+wget https://github.com/tenstorrent/tt-buda/releases/download/v0.12.3/pybuda-gs-v0.12.3-ubuntu-20-04-amd64-python3.8.zip
+unzip pybuda-gs-v0.12.3-ubuntu-20-04-amd64-python3.8.zip
+pip install pybuda-0.1.240509+dev.gs.a84d92c-cp38-cp38-linux_x86_64.whl tvm-0.14.0+dev.tt.1955a63ea-cp38-cp38-linux_x86_64.whl torchvision-0.16.0+fbb4cc5-cp38-cp38-linux_x86_64.whl
+pip install ipykernel
+pip install jupyter
 ```
 
 ## 8. TT-SMI 
@@ -66,7 +72,7 @@ The primary aim of TT-SMI is to furnish users with a straightforward and user-fr
 Furthermore, users can utilize TT-SMI to execute resets for Tensix cores on the Grayskull board.
 To run tt-smi, execute the following command:
 ```
-(tt) username@tenstorrent:~$ tt-smi
+tt-smi
 ```
 <div style="text-align:center">
     <img src="https://github.com/cmcmicrosystems/Tenstorrent-Grayskull-e150-Accelerator/blob/main/images/4.png" alt="Image Alt Text">
@@ -81,7 +87,8 @@ cp -rf /CMC/tt-buda-demos/ .
 ```
 Alternatively, you can clone the repository:
 ```
-git clone https://github.com/tenstorrent/tt-buda-demos
+git clone --branch v0.12.3 --single-branch https://github.com/tenstorrent/tt-buda-demos.git
+cd tt-buda-demos
 ```
 
 At this stage, you have various options to interact with the e150:
@@ -95,7 +102,7 @@ At this stage, you have various options to interact with the e150:
 ## 10. Python Script Execution
 Navigate to the ResNet model demo directory by executing:
 ```
-cd tt-buda-demos/model_demos/cv_demos/resnet
+cd model_demos/cv_demos/resnet/pytorch_resnet.py
 ```
 Open the pytorch_resnet.py file in your editor to analyze it. To run PyTorch ResNet on Tenstorrent Grayskull e150 Accelerator, use the following command:
 ```
@@ -158,6 +165,49 @@ Click on one of the notebooks and ensure that the "tt" environment is enabled, a
 </div>
 
 Read through the notebook and execute each step meticulously to ensure smooth progress and accurate results.
+
+## 17. Benchmarking
+
+These commands are intended to set up an environment for benchmarking Tenstorrent's BUDA framework using specific models and tasks. Initially, a repository named "benchmarking" is cloned from GitHub, focusing on version "v0.12.3". The working directory is then changed to the "benchmarking" directory. Inside this directory, a Python virtual environment is created named ".venv" and activated. The pip3 command is used to upgrade pip to version 24.0. Next, a specific version of PyBUDA, optimized for the system, is downloaded and extracted. Subsequently, several Python packages are installed using pip, including PyBUDA, TVM, and torchvision, along with their respective dependencies specified in "requirements.txt". The PYTHONPATH is then exported to include the current directory. Finally, two benchmarking scripts are executed: the first one performs text classification using the BERT model, while the second one performs image classification using the ResNet-50 model with specific configurations and saves the output for analysis.
+
+```
+git clone --branch v0.12.3 --single-branch https://github.com/tenstorrent/benchmarking.git
+cd benchmarking
+python3 -m venv .venv
+source .venv/bin/activate
+pip3 install --upgrade pip==24.0
+wget https://github.com/tenstorrent/tt-buda/releases/download/v0.12.3/pybuda-gs-v0.12.3-ubuntu-20-04-amd64-python3.8.zip
+unzip pybuda-gs-v0.12.3-ubuntu-20-04-amd64-python3.8.zip
+pip install pybuda-0.1.240509+dev.gs.a84d92c-cp38-cp38-linux_x86_64.whl tvm-0.14.0+dev.tt.1955a63ea-cp38-cp38-linux_x86_64.whl torchvision-0.16.0+fbb4cc5-cp38-cp38-linux_x86_64.whl
+pip install -r requirements.txt
+export PYTHONPATH=.
+python benchmark.py -d tt -m bert -c base --task text_classification --save_output
+python benchmark.py -d tt -m resnet -c resnet50 --task image_classification -mb 64 --loop_count 32 -opt 4 --save_output
+```
+
+## 17. Run Docker
+
+These commands initiate the setup of an environment for running Tenstorrent's BUDA framework and its associated demos. Initially, a Docker image named "ghcr.io/tenstorrent/tt-buda/ubuntu-20-04-amd64/gs
+.12.3" is pulled. Subsequently, a Docker container is launched, configured to utilize Tenstorrent hardware resources and necessary system resources, such as hugepages, with specific settings for shared memory and access capabilities. 
+
+Within the container, system packages are updated, Git is installed, and a repository containing BUDA demos is cloned. Finally, the script "pytorch_resnet.py" from the cloned repository is executed, which likely demonstrates a convolutional neural network model using PyTorch's ResNet architecture.
+
+```
+docker pull ghcr.io/tenstorrent/tt-buda/ubuntu-20-04-amd64/gs:v0.12.3
+docker run --rm -ti \
+--device /dev/tenstorrent/0:/dev/tenstorrent/0 \
+-v /dev/hugepages-1G:/dev/hugepages-1G \
+--shm-size=4g \
+--cap-add ALL \
+ghcr.io/tenstorrent/tt-buda/ubuntu-20-04-amd64/gs:v0.12.3 bash
+
+# in container
+apt-get update && apt-get install -y git
+git clone --branch v0.12.3 --single-branch https://github.com/tenstorrent/tt-buda-demos.git
+cd tt-buda-demos
+python model_demos/cv_demos/resnet/pytorch_resnet.py
+```
+
 
 ### GitHub Links to Open Source Software Repositories
 Find below the GitHub links to Tenstorrent's open-source software repositories, which you may find valuable:
